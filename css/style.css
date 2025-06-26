@@ -187,9 +187,11 @@ img {
 }
 .content-down.current-daily.active {
   display: flex;
+  flex-direction: column;
 }
 .content-down.current-weekly.active {
   display: flex;
+  flex-direction: column;
 }
 .content-down.current-weekly {
   display: none;
@@ -199,6 +201,7 @@ img {
 }
 .content-down.current-monthly.active {
   display: flex;
+  flex-direction: column;
 }
 
 .dashboard__main .Play {
@@ -312,10 +315,14 @@ img {
   .content-up {
     margin-block-end: 15px;
   }
-  .content-down {
-    /* display: flex; */
+  .content-down {    
     align-items: center;
     justify-content: space-between;
+  }
+  .content-down.current-daily.active,
+  .content-down.current-weekly.active,
+  .content-down.current-monthly.active {
+    flex-direction: row;
   }
   .content-down h4 {
     font-size: 2rem;
