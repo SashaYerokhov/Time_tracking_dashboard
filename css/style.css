@@ -7,9 +7,11 @@
   --purple-700-social: hsl(264, 64%, 52%);
   --yellow-300-self-care: hsl(43, 84%, 65%);
   --navy-950: hsl(226, 43%, 10%);
+  --navy-900-hover: hsl(236, 41%, 34%);
   --navy-900: hsl(235, 46%, 20%);
   --purple-500: hsl(235, 45%, 61%);
   --navy-200: hsl(236, 100%, 87%);
+  --color-text: hsl(180, 100%, 100%);
 }
 .rubik-light {
   font-family: "Rubik", sans-serif;
