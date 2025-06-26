@@ -1,20 +1,3 @@
-/**
-    
-    Дж С - при нажатии на кнопку меняется текст
-    это как с тоглом при переключении тарифных планов
-    событие - change
-
-    То есть при клике на день - появляется данные  дня
-    неделя - данные недели
-    месяц - данные месяца
-
-    то есть переключение - как переключение пунктов меню по очереди 
-    то есть в одном добавляется класс active - в другом убирается
-
-    попробуем сделать перелючение кнопок по очереди
-
-    -->
- */
 
 async function loadJson(filePath) {
   try {
@@ -32,7 +15,7 @@ async function loadJson(filePath) {
 document.addEventListener("DOMContentLoaded", () => {
   loadJson("data.json")
     .then((data) => {
-      // console.log(('JSON data loaded:', data));
+  
       const dashboard = document.querySelector(".dashboard");
       data.forEach((item) => {
         const div = document.createElement("div");
@@ -75,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// переменная для кнопок переключения день-неделя-месяц
+
 const timeframes = document.querySelectorAll(".dashboard-avatar-nav button");
 
 
@@ -95,8 +78,5 @@ timeframes.forEach((timeframe, index) => {
   });
 });
 
-/**
- * Есть три кнопки - День, Неделя, Месяц и при нажатии на каждую необходимо, есть три дива с данныем за День, Неделю и Месяц, и нобходимо, чтобы каждая выводила на экран данные за День, Неделю и Месяц соответственно
- */
 
 
